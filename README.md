@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor]()
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/nft-preview-card-using-css-flexbox-83wM2O13Up)
 - Live Site URL: [NFT Preview Card](https://cgrkzlkn.github.io/nft-preview-card-component/)
 
 ## My process

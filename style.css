@@ -1,0 +1,154 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --softBlue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --mainBG: hsl(217, 54%, 11%);
+    --cardBG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --bodyFont: 'Outfit', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+    font-family: var(--bodyFont);
+    font-size: 1.8rem;
+    background-color: var(--mainBG);
+    color: var(--softBlue);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    padding: 2.5rem;
+    background-color: var(--cardBG);
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0px 20px 20px 10px rgba(0, 0, 0, 0.32);
+}
+
+.card .image-container {
+    background-color: var(--cyan);
+    display: flex;
+    border-radius: 1rem;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.card .image-container .view-icon {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.card .main-img {
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.card .image-container:hover .main-img {
+    opacity: .5;
+}
+
+.card .image-container:hover .view-icon {
+    visibility: visible;
+}
+
+.card h1 {
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 2rem 0;
+    cursor: pointer;
+}
+
+.card h1:hover {
+    color: var(--cyan);
+}
+
+.card .desc {
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding-bottom: 2rem;
+}
+
+.card .card-info {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+
+.card .card-info .price {
+    display: flex;
+    align-items: center;
+    gap: 0 .5rem;
+    color: var(--cyan);
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+.card .card-info .time {
+    display: flex;
+    align-items: center;
+    gap: 0 .5rem;
+    font-size: 1.3rem;
+}
+
+.card-footer {
+    display: flex;
+    align-items: center;
+    gap: 0 1.5rem;
+    border-top: 1px solid var(--line);
+    padding-top: 1.5rem;
+}
+
+.card-footer img {
+    width: 3rem;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.card-footer p {
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.card-footer p .name {
+    color: white;
+    cursor: pointer;
+}
+
+.card-footer p .name:hover {
+    color: var(--cyan);
+}
+
+footer {
+    font-size: 1.3rem;
+    text-align: center;
+    padding-top: 5rem;
+}
+
+footer a {
+    color: hsl(228, 46%, 58%);
+}

@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Frontend Mentor]()
-- Live Site URL: [NFT Preview Card]()
+- Live Site URL: [NFT Preview Card](https://cgrkzlkn.github.io/nft-preview-card-component/)
 
 ## My process
 
